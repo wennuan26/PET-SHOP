@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav class="Navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Whisker Haven</label>
+        <ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Pets</a></li>
+            <li><a class="active" href="#">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <main>
+            <br><br><br>
+                
+            <section class="services">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                <div class="service">
+                    <h3>Grooming</h3>
+                    <p>Price: $50</p>
+                    <button onclick="scheduleService('Grooming')">Schedule</button>
+                </div>
+                <div class="service">
+                    <h3>Training</h3>
+                    <p>Price: $80</p>
+                    <button onclick="scheduleService('Training')">Schedule</button>
+                </div>
+                <div class="service">
+                    <h3>Veterinary Service</h3>
+                    <p>Price: $100</p>
+                    <button onclick="scheduleService('Veterinary Service')">Schedule</button>
+                </div>
+                <div class="service">
+                    <h3>Flea Removal</h3>
+                    <p>Price: $60</p>
+                    <button onclick="scheduleService('Veterinary Service')">Schedule</button>
+                </div>
+                <div class="service">
+                    <h3>Pet Sitting and Boarding</h3>
+                    <p>Price: $8 per Hour</p>
+                    <button onclick="scheduleService('Pet Sitting and Boarding')">Schedule</button>
+                </div>
+                <div class="service">
+                    <h3>Microchipping</h3>
+                    <p>Price: $200</p>
+                    <button onclick="scheduleService('Microchipping')">Schedule</button>
+                </div>
+                <div class="service">
+                    <h3>Pet-Salon</h3>
+                    <p>Price: ---</p>
+                    <button onclick="scheduleService('Microchipping')">Schedule</button>
+                </div>
+                <div class="service">
+                    <h3>Counseling</h3>
+                    <p>Price: $200</p>
+                    <button onclick="scheduleService('Microchipping')">Schedule</button>
+                </div>
+            </div>
+            </section>
+    
+            <section class="schedule-form" style="display:none;">
+                <h2>Schedule an Appointment</h2>
+                <form id="appointment-form">
+                    <label for="service">Service:</label>
+                    <input type="text" id="service" name="service" readonly>
+    
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+    
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Whisker Haven. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <nav class="Navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Whisker Haven</label>
+        <ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <li><a href="index.html">Home</a></li>
+            <li><a  class="active" href="#">Pets</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="view-favorites">Favorites</a></li>
+        </ul>
+    </nav>
+    <section class="section">
+        <br>
+        <div>
+            <h1 style="color: white;font-size: 50px;">Pet Listings</h1>
+            <div class="filter-options">
+                <label for="species" style="color: white;">Filter by species:</label>
+                <select id="species" class="selectbg">
+                    <option value="all">All</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="fish">Fish</option>
+            
+                </select>
+                <label for="age" style="color: white;">Filter by age:</label>
+                <select id="age" class="selectbg">
+                    <option value="all">All</option>
+                    <option value="puppy">Puppy</option>
+                    <option value="adult">Adult</option>
+                    <option value="kitten">Kitten</option>
+
+                </select>
+            </div>
+            <div id="pet-list" class="pet-list">
+        
+            </div>
+            <div id="pagination" class="pagination">
+        
+            </div>
+        </div>
+        <script src="pets.js"></script>
+    </section>
+    <br>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Whisker Haven. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
